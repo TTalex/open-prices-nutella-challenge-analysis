@@ -1,0 +1,23 @@
+.grid line {
+  fill: none;
+  stroke: grey;
+  stroke-width: 1;
+  shape-rendering: crispEdges;
+  opacity: 0.2;
+}
+.redimage {
+  filter: sepia(1) hue-rotate(320deg) saturate(5);
+}
+
+.greenimage {
+  filter: sepia(1) hue-rotate(100deg) saturate(10);
+}
+
+.tooltip {
+  position: absolute;
+  visibility: hidden;
+}
+
+image {
+    cursor: pointer;
+}
