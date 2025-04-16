@@ -27,7 +27,7 @@ const Graph = ({sampleData, highlightPalmOil, nameFilter, setTooltipInfo}) => {
           || d.brands.toLowerCase().includes(nameFilter.toLowerCase())
           || d.product.toLowerCase().includes(nameFilter.toLowerCase())
         ))
-    }, [sampleData]);
+    }, [sampleData, nameFilter]);
 
     const zoomed = (event) => {
         const newXScale = event.transform.rescaleX(originXScale)
